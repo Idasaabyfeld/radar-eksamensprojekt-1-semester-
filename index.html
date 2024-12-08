@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside til Radar</title>
+    <title>Radar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Notable&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 <header>
-    <a href="img/forside/Logo.webp"></a>
+    <a href="img/forside/Logo.webp" class="logo"></a>
     <input type="checkbox" id="menu-bar">
-    <label for="menu-bar">menu</label>
+    <label for="menu-bar" class="menu-icon">&#9776;</label>
 
     <nav class="navbar">
         <ul>
-            <li><a href="index.html"><img src="img/forside/Logo.webp" alt="logo"></a></li>
+            <li><a href="index.html"><img class="logo" src="img/forside/Logo.webp" alt="logo"></a></li>
             <li><a href="program.html">Program</a>
                 <ul>
                     <li><a href="#">Tidligere koncerter</a></li>
@@ -31,7 +35,7 @@
                 </ul>
             </li>
 
-            <li><a href="#">Opdag Radar</a>
+            <li><a href="#">Opdag</a>
                 <ul>
                     <li><a href="#">Podcast</a></li>
                     <li><a href="#">Blog</a></li>

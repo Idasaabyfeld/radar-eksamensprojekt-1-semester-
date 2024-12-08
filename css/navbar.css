@@ -3,3 +3,186 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+· :Root {
+    --primary-color: #adeade;
+    ---secondary-color: #bababa;
+    --contrast-color: 000000;
+}
+
+.logo {
+    width: 90px; /*størrelsen på logo*/
+}
+
+body {
+    font-family: 'notable';
+    text-decoration: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FBDFB9 57%;
+    box-shadow: 0 5px 10px #EFDFCA;
+
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #F87D24;
+}
+*/
+
+
+header .navbar ul {
+    list-style: none; /*Fjerner bullet prikkerne*/
+    display: flex; /* Gør listen horisontal */
+    gap: 35px; /* Tilføjer mellemrum mellem elementerne */
+}
+
+
+header .navbar ul li {
+    position: relative;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: #F87D24;
+    display: block;
+}
+
+
+header .navbar ul li a:hover {
+    background: white; /*Ændre farven her*/ /*Her ændre man farven på baggrunden, når man køre musen over teksten*/
+    color: #F87D24;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #F87D24;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li ul li a {
+    color: #F87D24; /* Gør teksten synlig */
+    background: #FBDFB9; /* Sørger for, at baggrunden står i kontrast */
+    font-size: 18px;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+/*menu-ikonet*/
+header .menu-icon {
+    display: none; /* Skjult som standard */
+    font-size: 30px; /* Størrelse på hamburgermenuen */
+    cursor: pointer; /* Gør det klart, at det er klikbart */
+    color: #F87D24; /* Samme farve som dine links */
+    position: absolute;
+    top: 20px; /* Justér, så det passer til din header */
+    right: 20px; /* Placer det helt til højre */
+}
+
+@media(max-width:991px){
+    header .menu-icon {
+        display: block;
+    }
+    
+    header .navbar {
+        display: none;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block; /* Vis navbaren, når hamburgermenuen er aktiveret */
+        position: absolute;
+        top: 60px; /* Lige under headeren */
+        left: 0;
+        right: 0;
+        background: white; /* Baggrund for menuen */
+        z-index: 999; /* Sørg for, at menuen vises øverst */
+        padding: 10px;
+    }
+    
+    header .navbar ul {
+        display: flex;
+        flex-direction: column; /* Vertikal liste */
+        gap: 10px;
+    }
+
+    header .navbar ul li {
+        text-align: center; /* Centrer elementerne */
+    }
+
+}
+
+/*
+header label {
+    display: block;
+}
+
+
+header .navbar ul li {
+    width: 100%;
+}
+
+header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+}
+
+header .navbar ul li ul li {
+    background: #eee;
+}
+
+header .navbar ul li ul li ul {
+    width: 100%;
+    left:0;
+}
+
+   header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
