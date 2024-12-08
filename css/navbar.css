@@ -4,45 +4,28 @@
     box-sizing: border-box;
 }
 
-· :Root {
-    --primary-color: #adeade;
-    ---secondary-color: #bababa;
-    --contrast-color: 000000;
-}
-
 .logo {
-    width: 90px; /*størrelsen på logo*/
-}
-
-body {
-    font-family: 'notable';
-    text-decoration: uppercase;
-    text-decoration: none;
-    min-height: 100vh;
-    background-position: center;
+    width: 95px; /*størrelsen på logo*/
 }
 
 header {
+    font-family: 'notable';
+    text-decoration: uppercase;
+    text-decoration: none;
+
+    background-position: center;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: #FBDFB9 57%;
+    background: #fbb9e2 57%; /*Ændre farven til #FBDFB9 når du er færdig*/
     box-shadow: 0 5px 10px #EFDFCA;
 
     display: flex;
     align-items: center;
     z-index: 1000;
 }
-
-/*
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color: #F87D24;
-}
-*/
-
 
 header .navbar ul {
     list-style: none; /*Fjerner bullet prikkerne*/
