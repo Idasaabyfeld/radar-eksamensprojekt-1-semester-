@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 1024px) {
+/* Laptop*/
+
+footer {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-size: 16px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* fire kolonner */
+    gap: 60px;
+    text-align: left;
+    padding-top: 5em;
+  }
+
+.tekst-radar {
+    font-family: "Notable";
+    font-size: 36px;
+}
+
+.base, .socialemedier, .kontakt, .åbningstider {
+    font-family: "Noticia Text";
+    font-size: 15px;
+    letter-spacing: 10%; /* Juster værdien efter behov */
+}
+
+}
