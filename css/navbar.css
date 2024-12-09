@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:Root {
+    --baggrundsfarve: #FBDFB9 57%;
+    ---orangefarve: #F87D24;
+    ---sortfarve: black;
+    }
+
 .logo {
     width: 95px; /*størrelsen på logo*/
 }
@@ -19,9 +25,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #fbb9e2 57%; /*Ændre farven til #FBDFB9 når du er færdig*/
-    box-shadow: 0 5px 10px #EFDFCA;
-
+    background: var(--baggrundsfarve) 57%; 
+    padding-top: 15px;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -40,23 +45,24 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     padding: 18px;
-    color: #F87D24;
+    color: var(---orangefarve);
+    letter-spacing: 6%;
     display: block;
 }
 
 
 header .navbar ul li a:hover {
     background: white; /*Ændre farven her*/ /*Her ændre man farven på baggrunden, når man køre musen over teksten*/
-    color: #F87D24;
+    color: var(---orangefarve);
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #F87D24;
+    background: var(---orangefarve);
     display: none;
 }
 
@@ -71,8 +77,8 @@ header .navbar ul li ul li ul {
 }
 
 header .navbar ul li ul li a {
-    color: #F87D24; /* Gør teksten synlig */
-    background: #FBDFB9; /* Sørger for, at baggrunden står i kontrast */
+    color: var(---orangefarve); /* Gør teksten synlig */
+    background: var(--baggrundsfarve); /* Sørger for, at baggrunden står i kontrast */
     font-size: 18px;
 }
 
@@ -98,7 +104,7 @@ header .menu-icon {
     display: none; /* Skjult som standard */
     font-size: 30px; /* Størrelse på hamburgermenuen */
     cursor: pointer; /* Gør det klart, at det er klikbart */
-    color: #F87D24; /* Samme farve som dine links */
+    color: var(---orangefarve); /* Samme farve som dine links */
     position: absolute;
     top: 20px; /* Justér, så det passer til din header */
     right: 20px; /* Placer det helt til højre */

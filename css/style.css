@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+:Root {
+--baggrundsfarve: #FBDFB9 57%;
+---orangefarve: #F87D24;
+---sortfarve: black;
+}
+
 body {
-    background-color: #FBDFB9;
+    background-color: var(--baggrundsfarve)
     }
 
 
@@ -15,7 +21,7 @@ body {
 
 .overskrift {
     font-family: "Anton SC";
-    color: #F87D24;
+    color: var(---orangefarve);
     font-size: 48px;
     text-align: center;
 }

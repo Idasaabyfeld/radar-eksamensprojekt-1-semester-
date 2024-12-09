@@ -4,31 +4,95 @@
     box-sizing: border-box;
 }
 
+:Root {
+    --baggrundsfarve: #FBDFB9;
+    ---orangefarve: #F87D24;
+    ---sortfarve: black;
+    }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 768px) {
+    footer {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* fire kolonner */
+        gap: 60px;
+        text-align: left;
+        padding-top: 5em;
+      }
+    
+    .tekst-radar {
+        font-family: "Notable";
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .base, .socialemedier {
+        padding-bottom: 20px;
+    }
+    
+    .base, .socialemedier, .kontakt, .åbningstider {
+        font-family: "Noticia Text";
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 10%; /* Juster værdien efter behov */
+    }
+    
+    .åbningstider {
+        padding-top: 4.7em;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+}
+
+
+
+
 /* Laptop*/
-
-footer {
-    margin-left: 6rem;
-    margin-right: 6rem;
-    font-size: 16px;
-    line-height: 1.5;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* fire kolonner */
-    gap: 60px;
-    text-align: left;
-    padding-top: 5em;
-  }
-
-.tekst-radar {
-    font-family: "Notable";
-    font-size: 36px;
-}
-
-.base, .socialemedier, .kontakt, .åbningstider {
-    font-family: "Noticia Text";
-    font-size: 15px;
-    letter-spacing: 10%; /* Juster værdien efter behov */
-}
-
-}
+@media (min-width: 992px) {
+    
+    footer {
+        margin-left: 6rem;
+        margin-right: 6rem;
+        font-size: 16px; /* Muligvis slet */
+        line-height: 1.5; /* Muligvis slet */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* fire kolonner */
+        gap: 60px;
+        text-align: left;
+        padding-top: 5em;
+      }
+    
+    .tekst-radar {
+        font-family: "Notable";
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .base, .socialemedier {
+        padding-bottom: 20px;
+    }
+    
+    .base, .socialemedier, .kontakt, .åbningstider {
+        font-family: "Noticia Text";
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 10%; /* Juster værdien efter behov */
+    }
+    
+    .kontakt, .åbningstider {
+        padding-top: 5em;
+    }
+    
+    .åbningstider {
+        padding-left: 6em;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    }
+    
