@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-height: 6em; /* Juster højden her */
+    --baggrundsfarve: #F6E9D5;
+    ---orangefarve: #F87D24;
+}
+
+body {
+    background-color: var(--baggrundsfarve)
+    }
+
+
+h1 {
+    padding-top: 2em;
+    text-align: center;
+    color: var(---orangefarve);
+    font-family: "Anton SC";
+    font-size: 50px;
+}
+
+.billeder-program {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 5px; /* Mellemrum mellem billeder */
+    justify-items: center; /* Centrer billederne horisontalt */
+    align-items: center; /* Centrer billederne vertikalt */
+    padding-top: var(--navbar-height);
+}
+
+.billeder-program img {
+    width: 250px; /* Fast bredde */
+    height: 250px; /* Fast højde */
+    object-fit: contain; /* Hele billedet vises uden beskæring */
+    border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
+}
+
+.billeder-program a:hover img {
+    transform: scale(1.1); /* Zoomer lidt ind */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Tilføjer en skygge */
+}
+
+
+@media only screen and (min-width: 525px) {
+.billeder-program img {
+    width: 320px; /* Fast bredde */
+    height: 320px; /* Fast højde */
+    object-fit: contain; /* Hele billedet vises uden beskæring */
+    border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
+}
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+.billeder-program {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* To kolonner */
+    padding-top: 2em;
+}
+
+.billeder-program img {
+    width: 320px; /* Fast bredde */
+    height: 320px; /* Fast højde */
+    object-fit: contain; /* Hele billedet vises uden beskæring */
+    border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
+}
+
+h1 {
+    font-size: 60px;
+}
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+.billeder-program {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* To kolonner */
+    gap: 4px; /* Mellemrum mellem billeder */
+}
+
+.billeder-program img {
+    width: 320px; /* Fast bredde */
+    height: 320px; /* Fast højde */
+    object-fit: contain; /* Hele billedet vises uden beskæring */
+    border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
+}
+
+h1 {
+    font-size: 70px;
+}
+    }

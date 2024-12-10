@@ -1,6 +1,6 @@
 /* General styling */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -16,116 +16,68 @@ footer {
     width: 100%;
     background-color: var(--footerbaggrundsfarve);
     padding: 2em;
+    font-size: 10px;
+    font-family: "Noticia Text";
+    line-height: 20px;
+    letter-spacing: 0.5px;
 }
 
 .tekst-radar {
     font-family: "Notable";
-    font-size: 40px;
+    font-size: 20px;
 }
 
+.venstre-side {
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+  }
 
-@media only screen and (min-width: 320px) {
-    footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: left;
-    }
+.bold {
+    font-weight: bolder;
+  }
 
+.tider {
+    padding-top: 1.2rem;
 }
 
-
+/* tablet */
 @media only screen and (min-width: 768px) {
-    footer {
-        margin-left: 4rem;
-        margin-right: 4rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* fire kolonner */
-        gap: 60px;
-        text-align: left;
-        padding-top: 5em;
-        background-color: var(--footerbaggrundsfarve);
-      }
-    
-    .tekst-radar {
-        font-family: "Notable";
-        font-size: 40px;
-        padding-bottom: 40px;
-    }
-    
-    .base, .socialemedier, .kontakt {
-        padding-bottom: 40px;
-    }
-    
-    .base, .socialemedier, .kontakt, .åbningstider {
-        font-family: "Noticia Text";
-        font-size: 20px;
-        line-height: 35px;
-        letter-spacing: 10%; /* Juster værdien efter behov */
-    }
-    
-    .åbningstider {
-        padding-top: 4.7em;
-    }
-    
-    .bold {
-        font-weight: bold;
-    }
+footer {
+    font-family: "noticia text";
+    font-size: 15px;
+    line-height: 30px;
+    gap: 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* to kolonner */
+  }
+
+
+.tekst-radar {
+    font-size: 30px;
+    padding-bottom: 1.5rem;
 }
 
+.venstre-side {
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+  }
+
+.tider {
+    padding-top: 7.5em;
+}
+}
 
 /* Laptop*/
-@media only screen and (min-width: 992px) {
-    
-    footer {
-        width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* fire kolonner */
-        gap: 60px;
-        text-align: left;
-        padding-top: 5em;
-        background-color: var(--footerbaggrundsfarve);
-      }
-    
-    .venstre-side {
-        padding-left: 7.5em;
-    }
+@media only screen and (min-width: 1024px) {
+footer {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tre kolonner */
+  }
 
-    .tekst-radar {
-        font-family: "Notable";
-        font-size: 40px;
-        padding-bottom: 40px;
-    }
-    
-    .base, .socialemedier {
-        padding-bottom: 3em;
-    }
-    
-    .base, .socialemedier, .kontakt, .åbningstider {
-        font-family: "Noticia Text";
-        font-size: 20px;
-        line-height: 40px;
-        letter-spacing: 10%; /* Juster værdien efter behov */
-    }
-    
-    .kontakt {
-        padding-left: 6.5em;
-        padding-top: 5em;
-    }
+.tider {
+    padding-top: 5.5em;
+}
 
-    .åbningstider {
-        padding-left: 6em;
-        padding-top: 5em;
-    }
-    
-    .bold {
-        font-weight: bold;
-    }
-
-    .venstre-side2 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* fire kolonner */
-    }
-
-    }
-    
+}

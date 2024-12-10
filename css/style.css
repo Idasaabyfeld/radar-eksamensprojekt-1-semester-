@@ -8,6 +8,7 @@
 --baggrundsfarve: #F6E9D5;
 ---orangefarve: #F87D24;
 ---sortfarve: black;
+--navbar-height: 6em; /* Juster højden her */
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 
 .bigphoto {
     width: 100%;
+    padding-top: var(--navbar-height);
 }
 
 .overskrift {

@@ -27,8 +27,6 @@ header {
     right: 0;
     background: var(--baggrundsfarve) 57%; 
     padding-top: 15px;
-    display: flex;
-    align-items: center;
     z-index: 1000;
 }
 
