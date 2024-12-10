@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-height: 6em; /* Juster højden her */
+    --baggrundsfarve: #F6E9D5;
+    ---orangefarve: #F87D24;
+}
+
+body {
+    background-color: var(--baggrundsfarve)
+    }
+
+
+.bigphoto {
+    padding-top: var(--navbar-height);
+    width: 100%; /* Fylder hele bredden af containeren */
+    max-width: 100%; /* Begrænser bredden til at passe til forældreelementet */
+    height: auto; /* Sørger for, at højden skalerer proportionalt */
+    display: flex; /* Centrer billedet, hvis nødvendigt */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Skjuler eventuelt overskud, hvis det skulle opstå */
+}
+
+.bigphoto img {
+    width: 100%; /* Skalerer billedet til containerens bredde */
+    height: auto; /* Bevarer proportionerne */
+    object-fit: contain; /* Sørger for, at hele billedet er synligt inden for rammen */
+    max-height: 100vh; /* Begrænser højden til højden på visningsvinduet */
+}
+
+
+h1 {
+    padding-top: 1rem;
+    text-align: center;
+    color: var(---orangefarve);
+    font-family: "Anton SC";
+    font-size: 28px;
+}
+
+.tekst1 {
+    font-family: "montserret";
+    font-size: 18px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    padding: 2em;
+}
+
+
+.billedertilhjaelpradar {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    align-items: center;
+    display: flex;
+}
+
+.tekst1, .tekst2 {
+    font-family: "montserret";
+    font-size: 18px;
+    color: black;
+    line-height: 40px;
+    padding: 2em;
+    list-style-position: inside; /* Gør prikkerne en del af listen og justerer dem med teksten */
+}
+
+/* ekstra device størrelse*/
+@media only screen and (min-width: 500px) {
+.billedertilhjaelpradar {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    align-items: center;
+    display: flex;
+}
+
+ul {
+    width: 90%; /* Eller en specifik bredde, afhængigt af dit layout */
+    margin: 0 auto; /* Centrerer containeren horisontalt */
+    text-align: left; /* Bevarer teksten venstrestillet inden for containeren */
+}
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+
+.billedertilhjaelpradar {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    align-items: center;
+    display: flex;
+}
+
+
+ul {
+    width: 90%; /* Eller en specifik bredde, afhængigt af dit layout */
+    margin: 0 auto; /* Centrerer containeren horisontalt */
+    text-align: left; /* Bevarer teksten venstrestillet inden for containeren */
+}
+
+.bokse {
+    display: grid;
+    grid-template-rows: auto auto; /* To rækker, en for hver sektion */
+    gap: 40px; /* Afstand mellem rækkerne */
+}
+
+.øverste, .nederste {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner til tekst og billede */
+    gap: 20px; /* Afstand mellem kolonnerne */
+    align-items: center; /* Justerer indholdet vertikalt */
+}
+
+.tekst, .tekst2 {
+    padding: 20px; /* Justér efter behov */
+}
+
+.billedertilhjaelpradar {
+    max-width: 100%; /* Sørger for, at billedet ikke overskrider containeren */
+    height: auto; /* Bevarer billedets aspect ratio */
+}
+
+
+.tekst {
+    font-family: "montserret";
+    font-weight: 200px;
+    font-size: 24px;
+    color: black;
+    line-height: 40px;
+    text-align: left;
+    padding: 2em;
+}
+
+ }

@@ -45,6 +45,8 @@ h1 {
 }
 
 
+
+/* ekstra device størrelse*/
 @media only screen and (min-width: 525px) {
 .billeder-program img {
     width: 320px; /* Fast bredde */
@@ -53,6 +55,7 @@ h1 {
     border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
 }
 }
+
 
 
 /* tablet */
@@ -74,6 +77,8 @@ h1 {
     font-size: 60px;
 }
 }
+
+
 
 /* Laptop */
 @media only screen and (min-width: 1024px) {
