@@ -30,6 +30,8 @@ h1 {
     justify-items: center; /* Centrer billederne horisontalt */
     align-items: center; /* Centrer billederne vertikalt */
     padding-top: var(--navbar-height);
+    padding-bottom: 4em;
+    width: 100%;
 }
 
 .billeder-program img {
@@ -49,13 +51,12 @@ h1 {
 /* ekstra device størrelse*/
 @media only screen and (min-width: 525px) {
 .billeder-program img {
-    width: 320px; /* Fast bredde */
-    height: 320px; /* Fast højde */
+    width: 300px; /* Fast bredde */
+    height: 300px; /* Fast højde */
     object-fit: contain; /* Hele billedet vises uden beskæring */
     border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
 }
 }
-
 
 
 /* tablet */
@@ -67,8 +68,8 @@ h1 {
 }
 
 .billeder-program img {
-    width: 320px; /* Fast bredde */
-    height: 320px; /* Fast højde */
+    width: 280px; /* Fast bredde */
+    height: 280px; /* Fast højde */
     object-fit: contain; /* Hele billedet vises uden beskæring */
     border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
 }

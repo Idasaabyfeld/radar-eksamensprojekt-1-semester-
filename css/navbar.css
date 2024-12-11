@@ -33,7 +33,6 @@ header {
 header .navbar ul {
     list-style: none; /*Fjerner bullet prikkerne*/
     display: flex; /* Gør listen horisontal */
-    gap: 35px; /* Tilføjer mellemrum mellem elementerne */
 }
 
 
@@ -43,10 +42,10 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     padding: 18px;
     color: var(---orangefarve);
-    letter-spacing: 6%;
+    letter-spacing: 2px;
     display: block;
 }
 
@@ -77,7 +76,8 @@ header .navbar ul li ul li ul {
 header .navbar ul li ul li a {
     color: var(---orangefarve); /* Gør teksten synlig */
     background: var(--baggrundsfarve); /* Sørger for, at baggrunden står i kontrast */
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 1.4px;
 }
 
 header .navbar ul li:focus-within > ul,
@@ -123,7 +123,7 @@ header .menu-icon {
         top: 60px; /* Lige under headeren */
         left: 0;
         right: 0;
-        background: white; /* Baggrund for menuen */
+        background: var(--baggrundsfarve); /* Baggrund for menuen */
         z-index: 999; /* Sørg for, at menuen vises øverst */
         padding: 10px;
     }
