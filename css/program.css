@@ -84,7 +84,7 @@ h1 {
 @media only screen and (min-width: 1024px) {
 .billeder-program {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* To kolonner */
+    grid-template-columns: repeat(4, 1fr); /* fire kolonner */
     gap: 4px; /* Mellemrum mellem billeder */
 }
 

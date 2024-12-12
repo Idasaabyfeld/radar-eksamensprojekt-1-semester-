@@ -49,9 +49,11 @@ h1 {
     padding-bottom: 2em;
 }
 
-.forsidebillederne {
-    width: 22em;
+.forsidebillederne, .forsidebillederne2 {
+    width: 18em;
 }
+
+
 
 .dato-tekst {
     color: var(---orangefarve);
@@ -109,6 +111,7 @@ h1 {
     line-height: 1.2em;
     padding-bottom: 1em;
     text-align: center;
+    padding-left: 2rem;
 }
 
 .nederste-tekst, .nederste-tekst2, .nederste-tekst3, .nederste-tekst4 {
@@ -116,20 +119,106 @@ h1 {
     font-family: "montserrat";
     font-size: 1em;
     line-height: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     text-align: left;
     padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* Ekstra devide */
+@media only screen and (min-width: 500px) {
+.forsidebillederne, .forsidebillederne2 {
+    width: 22em;
+}
 }
 
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
 
+.forside-kasser {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+}
+
+
+.kasse {
+    padding-left: 4em;
+}
+
+.forsidebillederne2 {
+    width: 16em;
+}
+
+
+.mellemrum-billeder {
+    gap: 6em;
+}
+
+.custom-button {
+    padding: 10px 80px;
+}
+
+.program-knap {
+    padding-left: 19em;
+}
+
+.nederste-tekst, .nederste-tekst2, .nederste-tekst3, .nederste-tekst4 {
+padding-left: 5em;
+padding-right: 5em;
+}
+
+.nederste-afsnit {
+    padding-left: 0;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.undertekst {
+    padding: 2em 6rem 3em 5rem;
+}
 }
 
 
 
 /* Laptop */
 @media only screen and (min-width: 1024px) {
+.forside-indhold {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+    grid-template-rows: auto auto; /* 2 rækker */
+    gap: 20px; /* Afstand mellem billederne */
+}
+
+/* Placering af billederne */
+.forside-kasser:first-child {
+    grid-column: 1; /* Ung-Skab - første kolonne */
+    grid-row: 1; /* Første række */
+    padding-bottom: 31em;
+}
+
+.forside-kasser:nth-child(2) {
+    grid-column: 2; /* Clothing Club - anden kolonne */
+    grid-row: 1; /* Første række */
+    display: flex;
+    flex-direction: column;
+}
+
+.forside-kasser:nth-child(3) {
+    grid-column: 1; /* Allen Anjeh - første kolonne */
+    grid-row: 2; /* Anden række */
+}
+
+.forsidebillederne {
+    width: 27em;
+}
+
+.forsidebillederne2 {
+    width: 20em;
+}
+
+.boks {
+    padding-right: 4em;
+}
 
 }
