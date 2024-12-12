@@ -5,10 +5,10 @@
 }
 
 :Root {
---baggrundsfarve: #F6E9D5;
----orangefarve: #F87D24;
----sortfarve: black;
---navbar-height: 6em; /* Juster højden her */
+    --baggrundsfarve: #F6E9D5;
+    ---orangefarve: #F87D24;
+    ---sortfarve: black;
+    --navbar-height: 6em; /* Juster højden her */
 }
 
 body {
@@ -21,17 +21,115 @@ body {
     padding-top: var(--navbar-height);
 }
 
-.overskrift {
+h1 {
     font-family: "Anton SC";
     color: var(---orangefarve);
-    font-size: 48px;
+    font-size: 2rem;
     text-align: center;
+    padding-top: 1em;
 }
 
 .undertekst {
     font-family: "Montserrat";
     color: black;
-    font-size: 25px;
+    font-size: 1rem;
     text-align: center;
     padding: 20px;
+    line-height: 2.6em;
+}
+
+.forside-indhold {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.boks {
+    padding-bottom: 2em;
+}
+
+.forsidebillederne {
+    width: 22em;
+}
+
+.dato-tekst {
+    color: var(---orangefarve);
+    font-size: 2em;
+    font-family: "Anton SC";
+}
+
+.navn-tekst {
+    color: var(---orangefarve);
+    font-family: "Anton SC";
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+/* bottom designet */
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 35px;
+    background-color: var(--baggrundsfarve);
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #f0e2cf;
+    transform: scale(1.05);
+  }
+
+  .custom-button::after {
+    content: '\2192'; /* Pil-symbol */
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+.program-knap {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+}
+
+
+.nederste-afsnit {
+    color: var(---orangefarve);
+    font-family: "Anton SC";
+    font-size: 1.7em;
+    line-height: 1.2em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.nederste-tekst, .nederste-tekst2, .nederste-tekst3, .nederste-tekst4 {
+    color: var(---sortfarve);
+    font-family: "montserrat";
+    font-size: 1em;
+    line-height: 2em;
+    padding-bottom: 2em;
+    text-align: left;
+    padding-left: 2em;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+
 }
