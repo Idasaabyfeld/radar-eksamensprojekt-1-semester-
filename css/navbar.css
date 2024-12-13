@@ -100,75 +100,59 @@ header label {
 /*menu-ikonet*/
 header .menu-icon {
     display: none; /* Skjult som standard */
-    font-size: 30px; /* Størrelse på hamburgermenuen */
+    font-size: 4em;; /* Størrelse på hamburgermenuen */
     cursor: pointer; /* Gør det klart, at det er klikbart */
     color: var(---orangefarve); /* Samme farve som dine links */
     position: absolute;
     top: 20px; /* Justér, så det passer til din header */
     right: 20px; /* Placer det helt til højre */
+    z-index: 1001;
 }
+
+
 
 @media(max-width:991px){
-    header .menu-icon {
-        display: block;
-    }
-    
-    header .navbar {
-        display: none;
-    }
-
-    #menu-bar:checked ~ .navbar {
-        display: block; /* Vis navbaren, når hamburgermenuen er aktiveret */
-        position: absolute;
-        top: 60px; /* Lige under headeren */
-        left: 0;
-        right: 0;
-        background: var(--baggrundsfarve); /* Baggrund for menuen */
-        z-index: 999; /* Sørg for, at menuen vises øverst */
-        padding: 10px;
-    }
-    
-    header .navbar ul {
-        display: flex;
-        flex-direction: column; /* Vertikal liste */
-        gap: 10px;
-    }
-
-    header .navbar ul li {
-        text-align: center; /* Centrer elementerne */
-    }
-}
-
-/*
-header label {
+header .menu-icon {
     display: block;
 }
 
+header .navbar {
+    display: none;
+}
+
+#menu-bar:checked ~ .navbar {
+    display: block; /* Vis navbaren, når hamburgermenuen er aktiveret */
+    position: relative;
+    /*top: 60px; /* Lige under headeren */
+    left: 0;
+    right: 0;
+    background: var(--baggrundsfarve); /* Baggrund for menuen */
+    z-index: 999; /* Sørg for, at menuen vises øverst */
+    padding: 10px;
+}
+
+header .navbar ul {
+    display: flex;
+    flex-direction: column; /* Vertikal liste */
+    gap: 10px;
+}
 
 header .navbar ul li {
-    width: 100%;
+    text-align: center; /* Centrer elementerne */
 }
 
 header .navbar ul li ul {
     position: relative;
+}
+
+
+header .navbar ul li ul li a {
+font-size: 14px;
+}
+
+
+.bigphoto {
     width: 100%;
+    padding-top: 8em;
 }
-
-header .navbar ul li ul li {
-    background: #eee;
 }
-
-header .navbar ul li ul li ul {
-    width: 100%;
-    left:0;
-}
-
-   header .navbar{
-        position: absolute;
-        top: 100%;
-        left:0;
-        right:0;
-        background: #fff;
-        border-top: 1px solid rgba(0,0,0,0.1);
-        display: none;
-    }

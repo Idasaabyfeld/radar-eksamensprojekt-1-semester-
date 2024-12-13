@@ -45,15 +45,13 @@ h1 {
     padding: 1em;
 }
 
-.boks {
+.boks, .boks1 {
     padding-bottom: 2em;
 }
 
 .forsidebillederne, .forsidebillederne2 {
     width: 18em;
 }
-
-
 
 .dato-tekst {
     color: var(---orangefarve);
@@ -84,6 +82,7 @@ h1 {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease;
+    width: fit-content;
   }
 
   .custom-button:hover {
@@ -125,6 +124,12 @@ h1 {
     padding-right: 2em;
 }
 
+.bornsvilkar {
+    width: 91%;
+    padding: 2em;
+}
+
+
 /* Ekstra devide */
 @media only screen and (min-width: 500px) {
 .forsidebillederne, .forsidebillederne2 {
@@ -140,7 +145,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* To kolonner */
 }
-
 
 .kasse {
     padding-left: 4em;
@@ -166,19 +170,26 @@ h1 {
 .nederste-tekst, .nederste-tekst2, .nederste-tekst3, .nederste-tekst4 {
 padding-left: 5em;
 padding-right: 5em;
+font-size: 1rem;
 }
 
 .nederste-afsnit {
     padding-left: 0;
     font-size: 2em;
     padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 .undertekst {
-    padding: 2em 6rem 3em 5rem;
-}
+    padding: 2em 10rem 3em 10rem;
+    font-size: 1.3rem;
 }
 
+.bornsvilkar {
+width: 100%;
+padding: 3em 14em 7em 5em;
+}
+}
 
 
 /* Laptop */
@@ -217,8 +228,40 @@ padding-right: 5em;
     width: 20em;
 }
 
-.boks {
+.boks, .boks1 {
     padding-right: 4em;
 }
 
+.program-knap {
+    padding-left: 34em;
+}
+
+.bornsvilkar {
+    width: 100%;
+    padding: 8em 4em 0em 0em;
+}
+
+.nederste-rubrik {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    padding-bottom: 6em;
+}
+}
+
+
+/* Laptop 2 */
+@media only screen and (min-width: 1200px) {
+.program-knap {
+    padding-left: 47em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+
+.boks1 {
+    padding-left: 7em;
+}
+
+.forsidebillederne {
+    width: 31em;
+}
 }
