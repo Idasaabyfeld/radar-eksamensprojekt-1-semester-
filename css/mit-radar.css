@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:Root {
+    --baggrundsfarve: #F6E9D5;
+    ---orangefarve: #F87D24;
+    ---sortfarve: black;
+    }
+
+body {
+    background-color: var(--baggrundsfarve);
+    width: 100%;
+    }
+    
+
+h1 {
+    font-family: "Anton SC";
+    color: var(---orangefarve);
+    font-size: 1.8rem;
+    text-align: left;
+    padding-top: 4em;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.person {
+    width: 90%;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-family: "Anton SC";
+    color: var(---orangefarve);
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-family: "Montserrat";
+    color: var(---orangefarve);
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 0.4rem;
+    font-weight: 400;
+}
+
+.lille-tekst {
+    font-family: "Montserrat";
+    color: var(---sortfarve);
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 6em;
+    line-height: 2em;
+}
+
+.udenfor-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Sørger for at bokse placeres til venstre */
+    padding-right: 5em;
+}
+
+.box {
+    background-color: #f88d00; /* orange baggrund */
+    padding: 20px;
+    width: 13em;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Mellemrum mellem boksene */
+  }
+  
+  .concert-text {
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 3em;
+  }
+  
+  .points {
+    font-family: "Montserrat";
+    background-color: #a1a1a1; /* grå baggrund */
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer; /* Ændrer musemarkøren til en hånd */
+    text-decoration: none; /* Fjerner standard understrikning på linket */
+    transition: background-color 0.3s; /* Tilføjer en overgangseffekt */
+  }
+  
+  .points:hover {
+    background-color: #8a8a8a; /* Ændrer baggrundsfarven ved hover */
+  }  
