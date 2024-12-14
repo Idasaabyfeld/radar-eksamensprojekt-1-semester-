@@ -14,7 +14,6 @@ body {
     background-color: var(--baggrundsfarve);
     width: 100%;
     }
-    
 
 h1 {
     font-family: "Anton SC";
@@ -22,14 +21,14 @@ h1 {
     font-size: 1.8rem;
     text-align: left;
     padding-top: 4em;
-    padding-left: 1rem;
-    padding-bottom: 2rem;
+    padding-left: 2rem;
     letter-spacing: 1.5px;
+    padding-bottom: 1rem;
 }
 
 .person {
-    width: 90%;
-    padding-left: 1rem;
+    width: 70%;
+    padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -38,7 +37,7 @@ h2 {
     color: var(---orangefarve);
     font-size: 1.6rem;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 1rem;
     letter-spacing: 1.5px;
 }
@@ -48,7 +47,7 @@ h3 {
     color: var(---orangefarve);
     font-size: 1.2rem;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 0.4rem;
     font-weight: 400;
 }
@@ -58,11 +57,23 @@ h3 {
     color: var(---sortfarve);
     font-size: 0.9rem;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 3rem;
     padding-bottom: 6em;
     line-height: 2em;
 }
+
+
+.lille-tekst2 {
+    font-family: "Montserrat";
+    color: var(---sortfarve);
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-bottom: 2em;
+    line-height: 2em;
+} 
 
 .udenfor-box {
     display: flex;
@@ -105,4 +116,78 @@ h3 {
   
   .points:hover {
     background-color: #8a8a8a; /* Ændrer baggrundsfarven ved hover */
-  }  
+  } 
+
+
+  /* tablet */
+@media only screen and (min-width: 768px) {
+.person {
+    width: 45%;
+}
+
+.lille-tekst2 {
+    padding-right: 22rem;
+}
+
+.lille-tekst {
+    padding-right: 18rem;
+}
+
+.udenfor-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1em;
+}
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+
+h1 {
+    font-size: 4rem;
+    padding-top: 2em;
+    padding-left: 2rem;
+}
+
+.boks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.person {
+    padding-top: 9em;
+    width: 75%;
+    align-items: end;
+    display: grid;
+    padding-left: 10em;
+}
+
+.lille-tekst2 {
+    padding-right: 4rem;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.lille-tekst {
+    padding-right: 35rem;
+    font-size: 1.3rem;
+}
+
+.udenfor-box {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    width: 13em;
+    height: 13em;
+    font-size: 1.4rem;
+}
+
+}
