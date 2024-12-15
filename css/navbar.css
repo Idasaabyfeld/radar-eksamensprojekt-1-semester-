@@ -6,8 +6,7 @@
 
 :Root {
     --baggrundsfarve: #F6E9D5;
-    ---orangefarve: #F87D24;
-    ---sortfarve: black;
+    --orangefarve: #F87D24;
     }
 
 .logo {
@@ -16,8 +15,7 @@
 
 header {
     font-family: 'notable';
-    text-decoration: uppercase;
-    text-decoration: none;
+    text-transform: uppercase;
 
     background-position: center;
 
@@ -44,7 +42,7 @@ header .navbar ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 18px;
-    color: var(---orangefarve);
+    color: var(--orangefarve);
     letter-spacing: 2px;
     display: block;
 }
@@ -52,14 +50,14 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     background: white; /*Ændre farven her*/ /*Her ændre man farven på baggrunden, når man køre musen over teksten*/
-    color: var(---orangefarve);
+    color: var(--orangefarve);
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: var(---orangefarve);
+    background: var(--orangefarve);
     display: none;
 }
 
@@ -74,7 +72,7 @@ header .navbar ul li ul li ul {
 }
 
 header .navbar ul li ul li a {
-    color: var(---orangefarve); /* Gør teksten synlig */
+    color: var(--orangefarve); /* Gør teksten synlig */
     background: var(--baggrundsfarve); /* Sørger for, at baggrunden står i kontrast */
     font-size: 16px;
     letter-spacing: 1.4px;
@@ -102,7 +100,7 @@ header .menu-icon {
     display: none; /* Skjult som standard */
     font-size: 4em;; /* Størrelse på hamburgermenuen */
     cursor: pointer; /* Gør det klart, at det er klikbart */
-    color: var(---orangefarve); /* Samme farve som dine links */
+    color: var(--orangefarve); /* Samme farve som dine links */
     position: absolute;
     top: 20px; /* Justér, så det passer til din header */
     right: 20px; /* Placer det helt til højre */
@@ -111,7 +109,7 @@ header .menu-icon {
 
 
 
-@media(max-width:991px){
+@media(max-width:1006px){
 header .menu-icon {
     display: block;
 }

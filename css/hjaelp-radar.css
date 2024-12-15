@@ -7,7 +7,7 @@
 :root {
     --navbar-height: 6em; /* Juster højden her */
     --baggrundsfarve: #F6E9D5;
-    ---orangefarve: #F87D24;
+    --orangefarve: #F87D24;
 }
 
 body {
@@ -37,7 +37,7 @@ body {
 h1 {
     padding-top: 1rem;
     text-align: center;
-    color: var(---orangefarve);
+    color: var(--orangefarve);
     font-family: "Anton SC";
     font-size: 28px;
 }
@@ -60,6 +60,10 @@ h1 {
 }
 
 
+.billed-ned {
+    padding-bottom: 4em;
+}
+
 /* ekstra device størrelse*/
 @media only screen and (min-width: 500px) {
 .billedertilhjaelpradar {
@@ -80,7 +84,15 @@ ul {
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+.tekst1 {
+    text-align: left;
+    padding-right: 9em;
+    padding-left: 11em;
+}
 
+.tekst2 {
+    padding-left: 9em;
+}
 
 }
 

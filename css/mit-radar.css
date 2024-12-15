@@ -6,8 +6,8 @@
 
 :Root {
     --baggrundsfarve: #F6E9D5;
-    ---orangefarve: #F87D24;
-    ---sortfarve: black;
+    --orangefarve: #F87D24;
+    --sortfarve: #000;
     }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 h1 {
     font-family: "Anton SC";
-    color: var(---orangefarve);
+    color: var(--orangefarve);
     font-size: 1.8rem;
     text-align: left;
     padding-top: 4em;
@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     font-family: "Anton SC";
-    color: var(---orangefarve);
+    color: var(--orangefarve);
     font-size: 1.6rem;
     text-align: left;
     padding-left: 2rem;
@@ -44,7 +44,7 @@ h2 {
 
 h3 {
     font-family: "Montserrat";
-    color: var(---orangefarve);
+    color: var(--orangefarve);
     font-size: 1.2rem;
     text-align: left;
     padding-left: 2rem;
@@ -54,7 +54,7 @@ h3 {
 
 .lille-tekst {
     font-family: "Montserrat";
-    color: var(---sortfarve);
+    color: var(--sortfarve);
     font-size: 0.9rem;
     text-align: left;
     padding-left: 2rem;
@@ -66,7 +66,7 @@ h3 {
 
 .lille-tekst2 {
     font-family: "Montserrat";
-    color: var(---sortfarve);
+    color: var(--sortfarve);
     font-size: 0.9rem;
     text-align: left;
     padding-left: 2rem;
@@ -83,7 +83,7 @@ h3 {
 }
 
 .box {
-    background-color: #f88d00; /* orange baggrund */
+    background-color: var(--orangefarve);
     padding: 20px;
     width: 13em;
     height: 12em;
@@ -145,8 +145,8 @@ h3 {
 
 h1 {
     font-size: 4rem;
-    padding-top: 2em;
-    padding-left: 2rem;
+    padding-top: 2.6em;
+    padding-left: 2.8rem;
 }
 
 .boks {
@@ -155,7 +155,7 @@ h1 {
 }
 
 .person {
-    padding-top: 9em;
+    padding-top: 11em;
     width: 75%;
     align-items: end;
     display: grid;
@@ -165,19 +165,23 @@ h1 {
 .lille-tekst2 {
     padding-right: 4rem;
     font-size: 1.3rem;
+    padding-left: 2.8rem;
 }
 
 h2 {
     font-size: 3rem;
+    padding-left: 2.8rem;
 }
 
 h3 {
     font-size: 3rem;
+    padding-left: 2.8rem;
 }
 
 .lille-tekst {
     padding-right: 35rem;
     font-size: 1.3rem;
+    padding-left: 2.8rem;
 }
 
 .udenfor-box {

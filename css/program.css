@@ -7,7 +7,7 @@
 :root {
     --navbar-height: 6em; /* Juster højden her */
     --baggrundsfarve: #F6E9D5;
-    ---orangefarve: #F87D24;
+    --orangefarve: #F87D24;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 h1 {
     padding-top: 2em;
     text-align: center;
-    color: var(---orangefarve);
+    color: var(--orangefarve);
     font-family: "Anton SC";
     font-size: 50px;
 }
