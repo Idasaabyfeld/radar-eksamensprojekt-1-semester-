@@ -80,8 +80,25 @@ h1 {
 }
 
 
+/* Ekstra device */
+@media only screen and (min-width: 1050px) {
+.billeder-program {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* fire kolonner */
+    gap: 4px; /* Mellemrum mellem billeder */
+}
+
+.billeder-program img {
+    width: 260px; /* Fast bredde */
+    height: 260px; /* Fast højde */
+    object-fit: contain; /* Hele billedet vises uden beskæring */
+    border: 1px solid #ccc; /* Giver en lille kant for at skille billederne visuelt */
+}
+
+}
+
 /* Laptop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
 .billeder-program {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* fire kolonner */
