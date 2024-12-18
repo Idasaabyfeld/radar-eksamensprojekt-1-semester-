@@ -11,13 +11,13 @@
     }
 
 footer {
-    width: 100%;
+    width: -webkit-fill-available;
     background-color: var(--footerbaggrundsfarve);
     padding: 2em;
     font-size: 1em;
-    font-family: "Noticia Text";
+    font-family: "Noticia text";
     line-height: 20px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.9px;
 }
 
 .tekst-radar {
@@ -28,6 +28,7 @@ footer {
 .venstre-side {
     padding-top: 1.5rem;
     padding-bottom: 0rem;
+    word-wrap: break-word; /* Tvinger tekst til at bryde ved nødvendigt */
   }
 
 .bold {
@@ -72,6 +73,7 @@ footer {
     font-size: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* tre kolonner */
+    padding: 2em 0em 2em 3.2em;
   }
 
 .tider {
