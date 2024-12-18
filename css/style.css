@@ -36,6 +36,16 @@ h1 {
     line-height: 1.8em;
 }
 
+.undertekst3 {
+    font-family: "Montserrat";
+    color: var(--orangefarve);
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 6px;
+    line-height: 1.8em;  
+}
+
+
 .forside-indhold {
     align-items: center;
     display: flex;
@@ -192,7 +202,7 @@ font-size: 1rem;
 
 
 .undertekst {
-    padding: 2em 5rem 3em 5rem;
+    padding: 1rem 5rem 3em 5rem;
     font-size: 1.2rem;
 }
 
