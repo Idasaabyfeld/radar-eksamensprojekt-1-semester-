@@ -10,12 +10,12 @@
 }
 
 body {
-    background-color: var(--baggrundsfarve)
+    background-color: var(--baggrundsfarve);
     }
 
 
 .bigphoto {
-    width: 100%;
+    max-width: 100%;
     padding-top: var(--navbar-height);
 }
 
@@ -48,7 +48,7 @@ h1 {
 }
 
 .forsidebillederne, .forsidebillederne2 {
-    width: 18em; 
+    max-width: 18em; 
     height: auto;
     aspect-ratio: 5 / 4;
 }
@@ -125,7 +125,7 @@ h1 {
 }
 
 .bornsvilkar {
-    width: 91%;
+    max-width: 91%;
     padding: 2em;
     
 }
@@ -134,13 +134,13 @@ h1 {
 /* Ekstra devide */
 @media only screen and (min-width: 500px) {
 .forsidebillederne, .forsidebillederne2 {
-    width: 22em;
+    max-width: 22em;
     height: auto;
     aspect-ratio: 2 / 2;
 }
 
 .bornsvilkar {
-    width: 60%;
+    max-width: 60%;
     padding: 3em;
 }
 }
@@ -159,7 +159,7 @@ h1 {
 }
 
 .forsidebillederne2 {
-    width: 16em;
+    max-width: 16em;
     height: auto;
     aspect-ratio: 3 / 3.2;
 }
@@ -197,7 +197,7 @@ font-size: 1rem;
 }
 
 .bornsvilkar {
-width: 80%;
+max-width: 80%;
 padding: 3em 14em 7em 5em;
 }
 }
@@ -232,13 +232,13 @@ padding: 3em 14em 7em 5em;
 }
 
 .forsidebillederne {
-    width: 27em;
+    max-width: 27em;
     height: auto;
     aspect-ratio: 3 / 3;
 }
 
 .forsidebillederne2 {
-    width: 20em;
+    max-width: 20em;
     height: auto;
     aspect-ratio: 3 / 3;
 }
@@ -252,7 +252,7 @@ padding: 3em 14em 7em 5em;
 }
 
 .bornsvilkar {
-    width: 100%;
+    max-width: 100%;
     padding: 5em 2em 3em 0em;
     aspect-ratio: 3 / 4;
 }
@@ -278,7 +278,7 @@ padding: 3em 14em 7em 5em;
 }
 
 .forsidebillederne {
-    width: 31em;
+    max-width: 31em;
     height: auto;
     aspect-ratio: 3 / 3; /* Forholdet mellem bredde og højde */
 }
