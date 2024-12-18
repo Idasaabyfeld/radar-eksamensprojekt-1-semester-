@@ -14,7 +14,7 @@ footer {
     width: -webkit-fill-available;
     background-color: var(--footerbaggrundsfarve);
     padding: 2em;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: "Noticia text";
     line-height: 20px;
     letter-spacing: 1.9px;
@@ -70,7 +70,7 @@ footer {
 /* Laptop*/
 @media only screen and (min-width: 1024px) {
 footer {
-    font-size: 20px;
+    font-size: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* tre kolonner */
     padding: 2em 0em 2em 3.2em;
