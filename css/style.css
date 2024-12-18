@@ -15,7 +15,7 @@ body {
 
 
 .bigphoto {
-    max-width: 100%;
+    max-width: 100%; /* Billedet fylder hele bredden af containeren */
     padding-top: var(--navbar-height);
 }
 
@@ -33,7 +33,7 @@ h1 {
     font-size: 1rem;
     text-align: center;
     padding: 20px;
-    line-height: 2.6em;
+    line-height: 1.8em;
 }
 
 .forside-indhold {
@@ -192,8 +192,8 @@ font-size: 1rem;
 
 
 .undertekst {
-    padding: 2em 10rem 3em 10rem;
-    font-size: 1.3rem;
+    padding: 2em 5rem 3em 5rem;
+    font-size: 1.2rem;
 }
 
 .bornsvilkar {

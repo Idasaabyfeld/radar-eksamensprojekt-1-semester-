@@ -66,14 +66,12 @@ h1 {
 /* ekstra device størrelse*/
 @media only screen and (min-width: 500px) {
 .billedertilhjaelpradar {
-    width: 400px;
-    height: 400px;
     object-fit: contain;
     align-items: center;
     display: flex;
 }
 
-ul {
+.tekst2 {
     width: 90%; /* Eller en specifik bredde, afhængigt af dit layout */
     margin: 0 auto; /* Centrerer containeren horisontalt */
     text-align: left; /* Bevarer teksten venstrestillet inden for containeren */
@@ -112,7 +110,7 @@ h1 {
     display: flex;
 }
 
-ul {
+.tekst2 {
     width: 90%; /* Eller en specifik bredde, afhængigt af dit layout */
     margin: 0 auto; /* Centrerer containeren horisontalt */
     text-align: left; /* Bevarer teksten venstrestillet inden for containeren */
