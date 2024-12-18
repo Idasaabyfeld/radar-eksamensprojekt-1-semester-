@@ -12,6 +12,8 @@
 
 body {
     background-color: var(--baggrundsfarve);
+    align-items: center; /* Justerer indholdet vertikalt */
+    justify-content: center; /* Centrerer elementet horisontalt */
     }
 
 
@@ -42,8 +44,8 @@ h1 {
 }
 
 .billedertilhjaelpradar {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
     align-items: center;
     display: flex;
@@ -51,49 +53,23 @@ h1 {
 
 .tekst1, .tekst2 {
     font-family: "montserret";
-    font-size: 18px;
+    font-size: 1em;
     color: black;
     line-height: 40px;
     padding: 2em;
     list-style-position: inside; /* Gør prikkerne en del af listen og justerer dem med teksten */
+    width: 80%; /* Eller en anden procentdel afhængigt af ønsket bredde */
 }
-
 
 .billed-ned {
     padding-bottom: 4em;
 }
 
-/* ekstra device størrelse*/
-@media only screen and (min-width: 500px) {
-.billedertilhjaelpradar {
-    object-fit: contain;
-    align-items: center;
-    display: flex;
+.bokse {
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
-
-.tekst2 {
-    width: 90%; /* Eller en specifik bredde, afhængigt af dit layout */
-    margin: 0 auto; /* Centrerer containeren horisontalt */
-    text-align: left; /* Bevarer teksten venstrestillet inden for containeren */
-}
-}
-
-
-/* tablet */
-@media only screen and (min-width: 768px) {
-.tekst1 {
-    text-align: left;
-    padding-right: 9em;
-    padding-left: 11em;
-}
-
-.tekst2 {
-    padding-left: 9em;
-}
-
-}
-
-
 
 /* Laptop */
 @media only screen and (min-width: 1024px) {
@@ -103,17 +79,13 @@ h1 {
 }
 
 .billedertilhjaelpradar {
-    width: 60%;
-    height: 60%;
     object-fit: contain;
     align-items: center;
     display: flex;
-}
-
-.tekst2 {
-    width: 90%; /* Eller en specifik bredde, afhængigt af dit layout */
-    margin: 0 auto; /* Centrerer containeren horisontalt */
-    text-align: left; /* Bevarer teksten venstrestillet inden for containeren */
+    
+    max-width: 100%; /* Sørger for, at billedet ikke overskrider containeren */
+    height: auto; /* Bevarer billedets aspect ratio */
+    padding-top: 6em;
 }
 
 .bokse {
@@ -124,34 +96,23 @@ h1 {
 
 .øverste, .nederste {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* To kolonner til tekst og billede */
+    grid-template-columns: 1fr 1fr;
     gap: 20px; /* Afstand mellem kolonnerne */
-    align-items: center; /* Justerer indholdet vertikalt */
 }
-
-.tekst1, .tekst2 {
-    padding: 20px;
-}
-
-.billedertilhjaelpradar {
-    max-width: 100%; /* Sørger for, at billedet ikke overskrider containeren */
-    height: auto; /* Bevarer billedets aspect ratio */
-    padding-top: 6em;
-}
-
 
 .tekst1 {
     font-weight: 200;
-    font-size: 24px;
+    font-size: 1.4em;
     line-height: 50px;
-    text-align: left;
-    padding-left: 6em;
+    padding: 0em;
     grid-area: tekst1;
+    padding-top: 3em;
+    padding-left: 3em;
 }
 
 .tekst2 {
     font-weight: 200;
-    font-size: 24px;
+    font-size: 1.4em;
     line-height: 50px;
     text-align: left;
     grid-area: tekst2;
@@ -175,9 +136,4 @@ aside img:first-of-type {
 aside img:last-of-type {
     grid-area: billede2;
 }
-
-
- }
-
-
- 
+}
