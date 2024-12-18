@@ -11,14 +11,13 @@
 }
 
 body {
-    background-color: var(--baggrundsfarve)
+    background-color: var(--baggrundsfarve);
     }
 
 
 .bigphoto {
     padding-top: var(--navbar-height);
     width: 100%; /* Fylder hele bredden af containeren */
-    max-width: 100%; /* Begrænser bredden til at passe til forældreelementet */
     height: auto; /* Sørger for, at højden skalerer proportionalt */
     display: flex; /* Centrer billedet, hvis nødvendigt */
     justify-content: center;
@@ -181,3 +180,6 @@ aside img:last-of-type {
 
 
  }
+
+
+ 
