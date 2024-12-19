@@ -47,7 +47,6 @@ header .navbar ul li a {
     display: block;
 }
 
-
 header .navbar ul li a:hover {
     background: white; /*Ændre farven her*/ /*Her ændre man farven på baggrunden, når man køre musen over teksten*/
     color: var(--orangefarve);
